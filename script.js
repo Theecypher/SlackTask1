@@ -12,21 +12,21 @@ let second = d.getUTCSeconds();
     const Month = months[d.getMonth()];
     const year = d.getFullYear();
 
-    // if (hours > 12) {
-    //     hours -= 12;
-    //     period = "PM"
-    // }
+    if (hours > 12) {
+        hours -= 12;
+        period = "PM"
+    }
 
-    // if (hours == 0) {
-    //     hours = 12;
-    //     period = "AM"
-    // }
+    if (hours == 0) {
+        hours = 12;
+        period = "AM"
+    }
 
     hours = hours < 10 ? `0${hours}` : `${hours}`;
     minute = minute < 10 ? `0${minute}` : `${minute}`;
     second = second < 10 ? `0${second}` : `${second}`;
 
-    let currentTime = `${hours} ${minute} ${second}`;
+    let currentTime = `${hours}:${minute}:${second}`;
     day.innerHTML = `${Day}th ${Month} ${year}`
 
     time.innerHTML = currentTime;
