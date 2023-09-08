@@ -15,8 +15,8 @@ const millisecond = d.getUTCMilliseconds();
     minute = minute < 10 ? `0${minute}` : `${minute}`;
     second = second < 10 ? `0${second}` : `${second}`;
 
-    let currentTime = `${year}${Month}${hours}${minute}${second}${millisecond}`;
-    day.innerHTML = `${Day}th ${Month} ${year}`
+    let currentTime = `Current UTC Time: ${year}${Month}${hours}${minute}${second}${millisecond}`;
+    day.innerHTML = Thursday
 
     time.innerHTML = currentTime;
 
