@@ -5,6 +5,11 @@
     transition: 0.5s all ease-in;
 }
 
+.slackName {
+    justify-self: center;
+    align-self: flex-start;
+    font-size: 2rem;
+}
 body {
     height: 100vh;
     background-color: antiquewhite;
@@ -21,13 +26,13 @@ img {
 
 .wrapper {
     text-align: center;
-    padding: 2rem;
-    margin: 1rem;
     display: flex;
     align-items: center;
     border-radius: 30px;
-    gap: 40px;
+    gap: 10px;
+    flex-direction: column-reverse;
 }
+
 
 p {
     margin: 3px;
@@ -41,11 +46,15 @@ a {
 
 @media only screen and (max-width: 768px) {
     .wrapper {
-        flex-direction: column-reverse;
+        padding: 1rem;
+        margin: 1rem;
         background-color: violet;
     }
     img {
         width: 300px;
+    }
+    .slackName {
+        justify-self: flex-start;
     }
 
 }
