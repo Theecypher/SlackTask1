@@ -12,15 +12,6 @@ let second = d.getUTCSeconds();
     const Month = months[d.getMonth()];
     const year = d.getFullYear();
 
-    if (hours > 12) {
-        hours -= 12;
-        period = "PM"
-    }
-
-    if (hours == 0) {
-        hours = 12;
-        period = "AM"
-    }
 
     hours = hours < 10 ? `0${hours}` : `${hours}`;
     minute = minute < 10 ? `0${minute}` : `${minute}`;
