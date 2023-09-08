@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: 0.5s all ease-in;
+}
+
+body {
+    height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    border-radius: 30px;
+    width: 400px;
+    margin-bottom: 30px;
+}
+
+.wrapper {
+    position: relative;
+    text-align: center;
+    padding: 2rem;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    gap: 40px;
+}
+
+p {
+    margin: 3px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        flex-direction: column-reverse;
+        background-color: violet;
+    }
+    img {
+        width: 300px;
+    }
+
+}
