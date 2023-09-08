@@ -6,7 +6,7 @@ time = document.querySelector("#time");
 let hours = d.getUTCHours();
 let minute = d.getUTCMinutes();
 let second = d.getUTCSeconds();
-    const Month = d.getUTCMonth();
+    const month = d.getUTCMonth();
     const year = d.getUTCFullYear();
 const millisecond = d.getUTCMilliseconds();
 
@@ -15,7 +15,7 @@ const millisecond = d.getUTCMilliseconds();
     minute = minute < 10 ? `0${minute}` : `${minute}`;
     second = second < 10 ? `0${second}` : `${second}`;
 
-    let currentTime = `Current UTC Time: ${year}${Month}${hours}${minute}${second}${millisecond}`;
+    let currentTime = `Current UTC Time: ${year}${month}${hours}${minute}${second}${millisecond}`;
     day.innerHTML = Thursday
 
     time.innerHTML = currentTime;
