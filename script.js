@@ -5,7 +5,7 @@ const months = ["January", "Feburary", "March", "April", "May", "June", "July", 
 
 function displayTime () {
     const d = new Date();
-    const day = d.getUTCDate();
+    const day = d.getDay();
 const hours = d.getUTCHours();
 const minute = d.getUTCMinutes();
 const second = d.getUTCSeconds();
