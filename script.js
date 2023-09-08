@@ -3,8 +3,6 @@ time = document.querySelector("#time");
 
 const months = ["January", "Feburary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ]
 
-const d = new Date()
-
 function displayTime () {
     const d = new Date();
     let hours = d.getUTCHours();
