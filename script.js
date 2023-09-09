@@ -1,7 +1,7 @@
 const day = document.querySelector("#day"),
 time = document.querySelector("#time");
 
-function DisplayTime () {
+function displayTime () {
 
     const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", 
                         "Thursday", "Friday", "Saturday" ]
@@ -13,7 +13,9 @@ function DisplayTime () {
     time.innerHTML = `${times}`;
 }
 
-setInterval(updateDayAndTime, 1000);
+displayTime();
+
+setInterval(displayTime, 1000);
 
 
 
