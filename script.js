@@ -18,7 +18,7 @@ const times = d.getTime();
     //let currentTime = `Current UTC Time: ${year}${month}${hours}${minute}${second}${millisecond}`;
     day.innerHTML = "Thursday";
 
-    time.innerHTML = ${times};
+    time.innerHTML = `${times}`;
 
 
 
